@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<script src="app.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="top">
+			<span class="iconfont icon-toLeft-copy"></span>
+			<p>酒类图文介绍</p>
+		</div>
+		<form id="xcry">
+			<div class="b1">
+				<p ><span class="iconfont icon-dianpu"></span>&nbsp;&nbsp;销售店铺名称</p>
+				<input type="text" placeholder="宁夏银川汾酒专卖"/>
+			</div>
+			<div class="b1">
+				<p><span class="iconfont icon-dingwei"></span>&nbsp;&nbsp;销售店铺地址</p>
+				<input type="text" placeholder="宁夏银川汾酒专卖"/>
+			</div>
+			<div class="b2">
+				<p><span class="iconfont icon-dianhua"></span>&nbsp;&nbsp;销售店铺电话</p>
+				<input type="text" placeholder="18780180388"/>
+			</div>
+			<div class="b2">
+				<p><span class="iconfont icon-leimupinleifenleileibie2"></span>&nbsp;&nbsp;销售酒类</p>
+				<input type="text" placeholder="白酒"/>
+			</div>
+			<div class="b2">
+				<p><span class="iconfont icon-geren"></span>&nbsp;&nbsp;销售姓名</p>
+				<input type="text" placeholder="李文建"/>
+			</div>
+			<div class="b2">
+				<p><span class="iconfont icon-fenxiaoshangpinshuliang"></span>&nbsp;&nbsp;销售数量</p>
+				<input type="text" placeholder="5斤"/>
+			</div>
+			<div class="b2">
+				<p><span class="iconfont icon-gaidanjia"></span>&nbsp;&nbsp;销售单价</p>
+				<input type="text" placeholder="20"/>
+			</div>
+			<div class="b2">
+				<p><span class="iconfont icon-gaidanjia"></span>&nbsp;&nbsp;是否发生窜货</p>
+				<div class="chos">
+					<label for="radio1" class="btn1 active">是</label><input type="radio"  name="identity" id="radio1" checked="checked"/>
+					<label for="radio2" class="btn2">否</label><input type="radio"  name="identity" id="radio2" />
+				</div>	
+			</div>
+			<button class="tj">提交</button>
+			
+			
+		</form>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		$("label").click(function(){
+			$(this).addClass("active");
+			$(this).siblings("label").removeClass("active");
+		})
+	</script>
+</html>
